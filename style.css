@@ -14,6 +14,7 @@ body {
     margin: 0;
     background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
 }
+
 /* Glassmorphism effect for the container */
 .glass-container {
     text-align: center;
@@ -32,7 +33,7 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 28px;
-    color:cornflowerblue;
+    color: cornflowerblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -54,6 +55,17 @@ h1 {
 
 .team-profile:hover {
     transform: scale(1.1);  /* Scale up image slightly on hover */
+}
+
+.team-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.vote-count {
+    font-weight: bold;
+    color: #007BFF;
 }
 
 .vote-btn {
