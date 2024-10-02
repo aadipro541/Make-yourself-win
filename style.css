@@ -1,0 +1,97 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+}
+/* Glassmorphism effect for the container */
+.glass-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);  /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);  /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color:cornflowerblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.team {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-profile:hover {
+    transform: scale(1.1);  /* Scale up image slightly on hover */
+}
+
+.vote-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vote-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Adding responsiveness for smaller screens */
+@media (max-width: 600px) {
+    .team {
+        margin: 10px;
+    }
+
+    .team-profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    .vote-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
